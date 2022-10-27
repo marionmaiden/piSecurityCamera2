@@ -1,4 +1,5 @@
 from abc import abstractmethod, ABC
+import time
 
 from common.DetectionLevel import DetectionLevel
 
@@ -42,3 +43,5 @@ class DetectorTemplate(ABC):
             if level > DetectionLevel.NONE:
                 self.notify(current_image, level)
                 original_image = current_image
+
+            time.sleep(2)

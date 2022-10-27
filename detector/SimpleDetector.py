@@ -44,7 +44,7 @@ class SimpleDetector:
         # Converting a list of tuples to list
         difference = statistics.mean(map(math.fsum, diff_list))
 
-        print("Image diff value: {}".format(diff))
+        print("Image diff value: {}".format(difference))
 
         return difference
 

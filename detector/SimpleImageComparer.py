@@ -6,11 +6,9 @@ import math
 import cv2
 
 '''
-    Simple movement detector
+    Simple image comparator based on movement detection
 '''
-
-
-class SimpleDetector:
+class SimpleImageComparer:
 
     '''
         Constructor: define detection tresholds and store the original image
